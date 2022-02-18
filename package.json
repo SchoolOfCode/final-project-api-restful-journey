@@ -11,7 +11,8 @@
     "dev": "nodemon -r dotenv/config ./bin/www.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "db:createingredientstable": "node -r dotenv/config ./db/scripts/ingredients/createIngredientsTable.js",
-    "db:populateingredientstable": "node -r dotenv/config ./db/scripts/ingredients/populateIngredientsTable.js"
+    "db:populateingredientstable": "node -r dotenv/config ./db/scripts/ingredients/populateIngredientsTable.js",
+    "db:createShoppingListTable.js": "node -r dotenv/config ./db/scripts/shoppingList/createShoppingListTable.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
