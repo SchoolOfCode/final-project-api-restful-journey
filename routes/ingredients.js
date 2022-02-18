@@ -1,5 +1,5 @@
 import express from "express";
-import { getAllIngredients,getAllIngredientsBySeason } from "../models/ingredients.js";
+import { getAllIngredients,getAllIngredientsBySeason, getAllIngredientsByMonth } from "../models/ingredients.js";
 
 const router = express.Router();
 
