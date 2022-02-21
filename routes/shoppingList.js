@@ -3,6 +3,7 @@ import {
   getAllListItems,
   getListItemByUser,
   addListItem,
+  deleteListItem,
 } from "../models/shoppingList.js";
 
 const router = express.Router();
@@ -40,6 +41,21 @@ router.post("/user/add", async function (req, res, next) {
   res.json({
     success: true,
     payload: shoppingList,
+  });
+});
+
+// Delete list item from shopping list
+
+router.delete("/user/delete", async function (req, res, next) {
+  const username = req.query.name;
+  console.log(username);
+  const item = req.body.item;
+  console.log(item);
+  const deletedItem = await deleteListItem(username, item);
+
+  res.json({
+    success: true,
+    payload: deletedItem,
   });
 });
 
