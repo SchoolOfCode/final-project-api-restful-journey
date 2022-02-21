@@ -1,5 +1,9 @@
 import express from "express";
-import { getAllListItems, getListItemByUser } from "../models/shoppingList.js";
+import {
+  getAllListItems,
+  getListItemByUser,
+  addListItem,
+} from "../models/shoppingList.js";
 
 const router = express.Router();
 
