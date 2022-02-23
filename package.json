@@ -12,6 +12,7 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "db:createingredientstable": "node -r dotenv/config ./db/scripts/ingredients/createIngredientsTable.js",
     "db:populateingredientstable": "node -r dotenv/config ./db/scripts/ingredients/populateIngredientsTable.js",
+    "db:deleteIngredientsTable.js": "node -r dotenv/config ./db/scripts/ingredients/deleteIngredientsTable.js",
     "db:createShoppingListTable.js": "node -r dotenv/config ./db/scripts/shoppingList/createShoppingListTable.js",
     "db:populateShoppingListTable.js": "node -r dotenv/config ./db/scripts/shoppingList/populateShoppingListTable.js"
   },
