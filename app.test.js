@@ -45,46 +45,59 @@ describe("GET /list", function () {
   });
 });
 
-// describe("GET /ingredients/season/:season", function () {
-//   test("gives us back 200", async function () {
-//     const actual = await request(app).get("ingredients/season/winter");
-//     expect(actual.body).toHaveProperty("payload");
-//     expect(actual.statusCode).toBe(200);
-//   });
-// });
-
-describe("POST /user/add", function () {
+describe("GET /ingredients", function () {
   test("gives us back 200", async function () {
-    const actual = await request(app).get("/user/add");
-    // .query({ val: 'Test1' })
-    const body = {};
-    expect(actual.body).toHaveProperty("payload[0].list");
+    const actual = await request(app).get("/ingredients/season/winter");
+    expect(actual.body).toHaveProperty("payload");
     expect(actual.statusCode).toBe(200);
   });
 });
 
-let elementId;
-
-describe("Test example", () => {
-  // Hidden for simplicity
-  test("POST /send", (done) => {
-    request(app)
-      .post("/send")
+describe("POST /list/user/add", function () {
+  test("gives us back 200", async function () {
+    await request(app)
+      .post("/list/user/add")
       .expect("Content-Type", /json/)
+      .query({ username: "Marwa" })
       .send({
-        email: "francisco@example.com",
+        item: "Apple",
       })
+
       .expect(201)
       .expect((res) => {
-        res.body.data.length = 2;
-        res.body.data[0].email = "test@example.com";
-        res.body.data[1].email = "francisco@example.com";
-      })
-      .end((err, res) => {
-        if (err) return done(err);
-        elementId = res.body.data[1].id;
-        return done();
+        res.body.payload[3].list = "Apple";
+        console.log(res.body.payload[3].list);
       });
+    // .end((err, res) => {
+    //   if (err) return done(err);
+    //   elementId = res.body.data[3].id;
+    //   return done();
+    // });
   });
-  // More things come here
 });
+
+// let elementId;
+
+// describe("Test example", () => {
+//   // Hidden for simplicity
+//   test("POST /send", (done) => {
+//     request(app)
+//       .post("/send")
+//       .expect("Content-Type", /json/)
+//       .send({
+//         email: "francisco@example.com",
+//       })
+//       .expect(201)
+//       .expect((res) => {
+//         res.body.data.length = 2;
+//         res.body.data[0].email = "test@example.com";
+//         res.body.data[1].email = "francisco@example.com";
+//       })
+//       .end((err, res) => {
+//         if (err) return done(err);
+//         elementId = res.body.data[1].id;
+//         return done();
+//       });
+//   });
+//   // More things come here
+// });

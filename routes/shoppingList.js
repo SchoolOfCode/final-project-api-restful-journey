@@ -40,6 +40,8 @@ router.post("/user/add", async function (req, res, next) {
   console.log(item);
   const shoppingList = await addListItem(username, item);
 
+  res.status(201);
+
   res.json({
     success: true,
     payload: shoppingList,
