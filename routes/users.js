@@ -7,9 +7,11 @@ const router = express.Router();
 router.get("/", async function (req, res, next) {
   const users = await getAllUsers();
 
+  res.status(200);
+
   res.json({
     success: true,
-    payload: users
+    payload: users,
   });
 });
 

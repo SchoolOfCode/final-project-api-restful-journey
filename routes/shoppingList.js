@@ -12,6 +12,8 @@ const router = express.Router();
 router.get("/", async function (req, res, next) {
   const shoppingList = await getAllListItems();
 
+  res.status(200);
+
   res.json({
     success: true,
     payload: shoppingList,

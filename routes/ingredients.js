@@ -1,5 +1,9 @@
 import express from "express";
-import { getAllIngredients,getAllIngredientsBySeason, getAllIngredientsByMonth } from "../models/ingredients.js";
+import {
+  getAllIngredients,
+  getAllIngredientsBySeason,
+  getAllIngredientsByMonth,
+} from "../models/ingredients.js";
 
 const router = express.Router();
 
@@ -7,31 +11,34 @@ const router = express.Router();
 router.get("/", async function (req, res, next) {
   const ingredients = await getAllIngredients();
 
+  res.status(200);
+
   res.json({
     success: true,
-    payload: ingredients
+    payload: ingredients,
   });
 });
 
 router.get("/season/:season", async function (req, res, next) {
-  const{season}= req.params
+  const { season } = req.params;
   const ingredients = await getAllIngredientsBySeason(season);
+
+  res.status(200);
 
   res.json({
     success: true,
-    payload: ingredients
+    payload: ingredients,
   });
 });
 
 router.get("/month/:month", async function (req, res, next) {
-  const{month}= req.params
+  const { month } = req.params;
   const ingredients = await getAllIngredientsByMonth(month);
 
   res.json({
     success: true,
-    payload: ingredients
+    payload: ingredients,
   });
 });
-
 
 export default router;
