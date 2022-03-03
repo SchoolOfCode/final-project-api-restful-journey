@@ -19,4 +19,17 @@ router.post("/", async function (req, res, next) {
   res.json({ success: true, payload: newUser });
 });
 
+router.post("/add", async function (req, res, next) {
+  const email = req.query.name;
+  console.log(username);
+  const item = req.body.item;
+  console.log(item);
+  const shoppingList = await addListItem(email, item);
+
+  res.json({
+    success: true,
+    payload: shoppingList,
+  });
+});
+
 export default router;

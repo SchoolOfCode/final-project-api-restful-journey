@@ -12,3 +12,21 @@ export async function addUser(username, email, favourites) {
   );
   return result.rows;
 }
+
+export async function addListItem(email, item) {
+  const data = await db.query(
+    `UPDATE users SET list = array_append(list, $1) WHERE email= $2 RETURNING *;`,
+    [item, email]
+  );
+  return data;
+}
+
+// deleteListItem function
+
+// export async function deleteListItem(username, item) {
+//   const data = await db.query(
+//     `UPDATE shopping_list SET list = array_remove(list, $1) WHERE username = $2;`,
+//     [item, username]
+//   );
+//   return data;
+// }
