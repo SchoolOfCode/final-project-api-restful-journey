@@ -1,5 +1,5 @@
 import express from "express";
-import { getAllUsers, addUser } from "../models/users.js";
+import { getAllUsers, addUser, addListItem } from "../models/users.js";
 
 const router = express.Router();
 
@@ -20,10 +20,10 @@ router.post("/", async function (req, res, next) {
 });
 
 router.post("/add", async function (req, res, next) {
-  const email = req.query.name;
-  console.log(username);
+  console.log(req.body)
+  const email = req.query.email;
   const item = req.body.item;
-  console.log(item);
+  
   const shoppingList = await addListItem(email, item);
 
   res.json({
