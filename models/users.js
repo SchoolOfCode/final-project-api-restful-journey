@@ -1,4 +1,3 @@
-import { user } from "pg/lib/defaults";
 import db from "../db/connection.js";
 
 export async function getAllUsers() {
