@@ -7,7 +7,7 @@ export async function getAllUsers() {
 
 export async function addUser(username, email, favourites, list) {
   const result = await db.query(
-    `INSERT INTO users (username, email, favourites, list) SELECT $1, $2, $3, $4 WHERE NOT EXISTS (SELECT $2 FROM users WHERE email=$2) RETURNING username, email, favourites, list;`,
+    `INSERT INTO users (username, email, favourites, list) SELECT $1, $2, $3, $4 WHERE NOT EXISTS (SELECT $2 FROM users WHERE email=$2) RETURNING *;`,
     [username, email, favourites, list]
   );
   return result.rows;
