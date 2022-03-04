@@ -46,8 +46,9 @@ router.delete("/delete", async function (req, res, next) {
   });
 });
 
-router.get("/list", async function (req, res, next) {
-  const email = req.body.email;
+router.get("/list/:id", async function (req, res, next) {
+  console.log('route ',req.params)
+  const email = req.params.id;
   const list = await getAllUsersItems(email);
   res.json({
     success: true,
