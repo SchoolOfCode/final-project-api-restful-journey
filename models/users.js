@@ -5,10 +5,10 @@ export async function getAllUsers() {
   return result.rows;
 }
 
-export async function addUser(username, email, favourites) {
+export async function addUser(username, email, favourites, list) {
   const result = await db.query(
-    `INSERT INTO users (username, email, favourites) SELECT $1, $2, $3 WHERE NOT EXISTS (SELECT $2 FROM users WHERE email=$2) RETURNING username, email, favourites;`,
-    [username, email, favourites]
+    `INSERT INTO users (username, email, favourites, list) SELECT $1, $2, $3, $4 WHERE NOT EXISTS (SELECT $2 FROM users WHERE email=$2) RETURNING username, email, favourites, list;`,
+    [username, email, favourites, list]
   );
   return result.rows;
 }
@@ -18,7 +18,22 @@ export async function addListItem(email, item) {
     `UPDATE users SET list = array_append(list, $1) WHERE email= $2 RETURNING *;`,
     [item, email]
   );
-  return data;
+  return data.rows;
+}
+
+export async function deleteListItem(email, item) {
+  const data = await db.query(
+    `UPDATE users SET list = array_remove(list, $1) WHERE email = $2 RETURNING list;`,
+    [item, email]
+  );
+  return data.rows;
+}
+
+export async function getAllUsersItems(email) {
+  const result = await db.query(`SELECT list FROM users WHERE email = $1;`, [
+    email,
+  ]);
+  return result.rows;
 }
 
 // deleteListItem function
