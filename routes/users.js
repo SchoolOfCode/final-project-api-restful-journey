@@ -20,7 +20,7 @@ router.post("/", async function (req, res, next) {
 });
 
 router.post("/add", async function (req, res, next) {
-  console.log(req.body)
+  console.log('body', req.body)
   const email = req.query.email;
   const item = req.body.item;
   
