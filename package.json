@@ -10,7 +10,7 @@
     "db:populateusers": "node -r dotenv/config ./db/scripts/users/populateTable.js",
     "db:deleteusers": "node -r dotenv/config ./db/scripts/users/deleteUsersTable.js",
     "dev": "nodemon -r dotenv/config ./bin/www.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "node -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js",
     "db:createingredientstable": "node -r dotenv/config ./db/scripts/ingredients/createIngredientsTable.js",
     "db:populateingredientstable": "node -r dotenv/config ./db/scripts/ingredients/populateIngredientsTable.js",
     "db:deleteIngredientsTable.js": "node -r dotenv/config ./db/scripts/ingredients/deleteIngredientsTable.js",
