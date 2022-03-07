@@ -5,6 +5,8 @@ import {
   addListItem,
   deleteListItem,
   getAllUsersItems,
+  addRecipe,
+  getAllRecipes
 } from '../models/users.js';
 
 const router = express.Router();
@@ -60,6 +62,22 @@ router.get('/list/:id', async function (req, res, next) {
     success: true,
     payload: list,
   });
+});
+
+// get Favourite recipes
+router.get("/favourites/:id", async function (req, res, next) {
+  const email = req.params.id
+  console.log(email);
+  const recipes = await getAllRecipes(email);
+  res.json({success: true, payload: recipes });
+});
+
+//add new recipe to favourites 
+router.post("/favourites", async function (req, res, next) {
+  const { recipe, email } = req.body;
+  console.log(req.body)
+  const newRecipe = await addRecipe(recipe, email);
+  res.json({ success: true, payload: newRecipe});
 });
 
 export default router;
