@@ -84,7 +84,6 @@ router.post("/favourites", async function (req, res, next) {
 //delete recipe from favourites
 router.put('/favourites', async function (req, res, next) {
   const { email, recipeIndex} = req.body;
-  console.log(typeof recipeIndex, 'email',email, recipeIndex)
   const deletedRecipe = await deleteRecipe(recipeIndex, email);
   res.status(200);
   res.json({

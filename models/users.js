@@ -53,21 +53,11 @@ export async function addRecipe(recipe, email) {
 }
 
 //delete recipe from favourite
-
 export async function deleteRecipe(recipeIndex, email) {
-  const beforeQuery = await db.query(`SELECT * FROM users WHERE email = $1;`, [email])
-  console.log('beforeQuery', beforeQuery.rows);
   const data = await db.query(
     `UPDATE users SET favourites = favourites - $1 ::INTEGER WHERE email= $2 RETURNING *;`,
     [recipeIndex, email]
   );
-  const afterQuery = await db.query(`SELECT * FROM users WHERE email = $1;`, [email])
-  console.log('afterQuery', afterQuery.rows);
   return data.rows;
 }
 
-
-// const data = await db.query(
-//   `UPDATE shopping_list SET list = array_remove(list, $1) WHERE username = $2;`,
-//   [item, username]
-// );
