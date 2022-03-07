@@ -36,12 +36,18 @@ export async function getAllUsersItems(email) {
   return result.rows;
 }
 
-// deleteListItem function
+//get favourite recipes
+export async function getAllRecipes(email) {
+  const data = await db.query(`SELECT favourites FROM users WHERE email = $1;`, [email]);
+  return data.rows;
+}
 
-// export async function deleteListItem(username, item) {
-//   const data = await db.query(
-//     `UPDATE shopping_list SET list = array_remove(list, $1) WHERE username = $2;`,
-//     [item, username]
-//   );
-//   return data;
-// }
+
+//add new recipe to favourites
+export async function addRecipe(recipe, email) {
+  const data = await db.query(
+    `UPDATE users SET favourites = favourites || $1 ::jsonb WHERE email= $2 RETURNING *;`,
+    [recipe, email]
+  );
+  return data.rows;
+}
