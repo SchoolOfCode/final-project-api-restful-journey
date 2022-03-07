@@ -51,3 +51,13 @@ export async function addRecipe(recipe, email) {
   );
   return data.rows;
 }
+
+//delete recipe from favourite
+export async function deleteRecipe(recipeIndex, email) {
+  const data = await db.query(
+    `UPDATE users SET favourites = favourites - $1 ::INTEGER WHERE email= $2 RETURNING *;`,
+    [recipeIndex, email]
+  );
+  return data.rows;
+}
+
