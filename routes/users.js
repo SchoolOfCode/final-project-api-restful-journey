@@ -6,10 +6,12 @@ import {
   deleteListItem,
   getAllUsersItems,
   addRecipe,
-  getAllRecipes
+  getAllRecipes,
+  deleteRecipe
 } from '../models/users.js';
 
 const router = express.Router();
+// where email read as user id
 
 /* GET users listing. */
 router.get('/', async function (req, res, next) {
@@ -35,7 +37,6 @@ router.post('/', async function (req, res, next) {
 router.post('/add', async function (req, res, next) {
   console.log('body', req.body);
   const { email, item } = req.body;
-
   const shoppingList = await addListItem(email, item);
   res.status(201);
   res.json({
@@ -78,6 +79,18 @@ router.post("/favourites", async function (req, res, next) {
   console.log(req.body)
   const newRecipe = await addRecipe(recipe, email);
   res.json({ success: true, payload: newRecipe});
+});
+
+//delete recipe from favourites
+router.put('/favourites', async function (req, res, next) {
+  const { email, recipeIndex} = req.body;
+  console.log(typeof recipeIndex, 'email',email, recipeIndex)
+  const deletedRecipe = await deleteRecipe(recipeIndex, email);
+  res.status(200);
+  res.json({
+    success: true,
+    payload: deletedRecipe,
+  });
 });
 
 export default router;
