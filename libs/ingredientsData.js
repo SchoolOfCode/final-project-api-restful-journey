@@ -3,7 +3,7 @@ export const ingredients = [
     id: 1,
     name: 'Carrot',
     imgUrl:
-      'https://images.unsplash.com/photo-1601493700750-58796129ebb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
+      'https://i.imgur.com/n1szSXn.jpg',
     isFruit: false,
     season: ['spring', 'summer', 'autumn', 'winter'],
     months: [0, 1, 2, 3, 6, 7, 8, 9, 10, 11],
@@ -14,7 +14,7 @@ export const ingredients = [
   {
     id: 2,
     name: 'Leeks',
-    imgUrl: 'https://media.healthyfood.com/wp-content/uploads/2017/03/What-to-do-with-leeks.jpg',
+    imgUrl: 'https://i.imgur.com/rahVWQz.jpg',
     isFruit: false,
     season: ['autumn', 'winter'],
     months: [0, 1, 2, 7, 8, 9, 10, 11],
@@ -26,7 +26,7 @@ export const ingredients = [
     id: 3,
     name: 'Pumpkin',
     imgUrl:
-      'https://images.freeimages.com/images/small-previews/234/mini-pumpkins-1385371.jpg',
+      'https://i.imgur.com/Kf4M1ry.jpg',
     isFruit: false,
     season: ['autumn', 'winter'],
     months: [7, 9, 9, 10, 11],
@@ -38,7 +38,7 @@ export const ingredients = [
     id: 4,
     name: 'Apple',
     imgUrl:
-      'https://images.freeimages.com/images/small-previews/26a/apples-1325879.jpg',
+      'https://i.imgur.com/gkGzCJc.jpg',
     isFruit: true,
     season: ['autumn', 'winter'],
     months: [0, 1, 9, 10, 11],
@@ -50,7 +50,7 @@ export const ingredients = [
     id: 5,
     name: 'Strawberries',
     imgUrl:
-      'https://images.freeimages.com/images/small-previews/c22/strawberry-1324897.jpg',
+      'https://i.imgur.com/y04wtHM.jpg',
     isFruit: true,
     season: ['spring', 'summer'],
     months: [4, 5, 6, 7, 8],
@@ -62,7 +62,7 @@ export const ingredients = [
     id: 6,
     name: 'Raspberries',
     imgUrl:
-      'https://images.unsplash.com/photo-1498668629810-d79dcafa7617?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
+      'https://i.imgur.com/1PO8qUW.jpg',
     isFruit: true,
     season: ['spring', 'summer'],
     months: [5, 6, 7, 8],
@@ -73,7 +73,7 @@ export const ingredients = [
   {
     id: 7,
     name: 'Cabbages',
-    imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Chou_1.jpg',
+    imgUrl: 'https://i.imgur.com/3UaiL0c.jpg',
     isFruit: false,
     season: ['winter'],
     months: [11, 0, 1, 2],
@@ -85,7 +85,7 @@ export const ingredients = [
     id: 8,
     name: 'Brussels sprout',
     imgUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/b/b6/Chou_de_bruxelles_coupe.jpg',
+      'https://i.imgur.com/wLQ2d5a.jpg',
     isFruit: false,
     season: ['winter'],
     months: [11, 0, 1, 2],
@@ -97,7 +97,7 @@ export const ingredients = [
     id: 9,
     name: 'Kiwifruit',
     imgUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/7/7a/Red_kiwi_fruit_slices.jpg',
+      'https://i.imgur.com/dgEDmQv.jpg',
     isFruit: true,
     season: ['autumn'],
     months: [8, 9, 10],
@@ -109,7 +109,7 @@ export const ingredients = [
     id: 10,
     name: 'Grapefruit',
     imgUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/d/d0/Citrus_paradisi_%28Grapefruit%2C_pink%29_white_bg.jpg',
+      'https://i.imgur.com/2Kmrg1K.jpg',
     isFruit: true,
     season: ['winter', 'spring'],
     months: [11, 0, 1, 2, 3, 4],
@@ -121,7 +121,7 @@ export const ingredients = [
     id: 11,
     name: 'Kale',
     imgUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/2/20/Boerenkool.jpg',
+      'https://i.imgur.com/197qI3X.jpg',
     isFruit: false,
     season: ['winter'],
     months: [9, 10, 11, 0, 1],
@@ -133,7 +133,7 @@ export const ingredients = [
     id: 12,
     name: 'Pears',
     imgUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/b/b2/Assortment_of_pears.jpg',
+      'https://i.imgur.com/h9U4973.jpg',
     isFruit: true,
     season: ['autumn', 'winter'],
     months: [9, 10, 11, 0],
@@ -145,7 +145,7 @@ export const ingredients = [
     id: 13,
     name: 'Broccoli',
     imgUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/0/03/Broccoli_and_cross_section_edit.jpg',
+      'https://i.imgur.com/X5xi6VC.jpg',
     isFruit: false,
     season: ['spring', 'autumn'],
     months: [3, 4, 5, 8, 9, 10],
@@ -157,7 +157,7 @@ export const ingredients = [
     id: 14,
     name: 'Lemon',
     imgUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg',
+      'https://i.imgur.com/uQnGMK3.jpg',
     isFruit: true,
     season: ['winter'],
     months: [0, 1, 2],
@@ -169,7 +169,7 @@ export const ingredients = [
     id: 15,
     name: 'Courgette',
     imgUrl:
-      'https://www.deliciousmagazine.co.uk/wp-content/uploads/2018/08/772374-1-eng-GB_how-to-grow-courgettes-768x712.jpg',
+      'https://i.imgur.com/p5janaI.jpg',
     isFruit: false,
     season: ['summer', 'autumn'],
     months: [5, 6, 7, 8],
@@ -181,7 +181,7 @@ export const ingredients = [
     id: 16,
     name: 'Cauliflower',
     imgUrl:
-      'https://images.unsplash.com/photo-1579705743135-bc6ef4f6a8d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+      'https://i.imgur.com/L2yGMTu.jpg',
     isFruit: false,
     season: ['winter', 'spring'],
     months: [0, 1, 2, 3],
@@ -193,7 +193,7 @@ export const ingredients = [
     id: 17,
     name: 'Watermelon',
     imgUrl:
-      'https://images.unsplash.com/photo-1563114773-84221bd62daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+      'https://i.imgur.com/rysW10A.jpg',
     isFruit: true,
     season: ['summer'],
     months: [4, 5, 6],
@@ -205,7 +205,7 @@ export const ingredients = [
     id: 18,
     name: 'Rhubarb',
     imgUrl:
-      'https://images.unsplash.com/photo-1553536645-f83758b55d23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=884&q=80',
+      'https://i.imgur.com/FgyEAGQ.jpg',
     isFruit: false,
     season: ['winter', 'spring', 'summer'],
     months: [0, 1, 2, 3, 4, 5],
@@ -217,7 +217,7 @@ export const ingredients = [
     id: 19,
     name: 'Peas',
     imgUrl:
-      'https://images.unsplash.com/photo-1628444756989-ea3f47c0ebb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+      'https://i.imgur.com/swSoLbN.jpg',
     isFruit: false,
     season: ['spring', 'summer'],
     months: [5, 6, 7, 8],
@@ -229,7 +229,7 @@ export const ingredients = [
     id: 20,
     name: 'Spinach',
     imgUrl:
-      'https://images.unsplash.com/photo-1588891557811-5f2fba9e3009?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+      'https://i.imgur.com/7pOEYwp.jpg',
     isFruit: false,
     season: ['spring'],
     months: [3, 4, 5],
@@ -241,7 +241,7 @@ export const ingredients = [
     id: 21,
     name: 'Beetroot',
     imgUrl:
-      'https://images.unsplash.com/photo-1533231040102-5ec7a63e6d0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+      'https://i.imgur.com/Ppw1waX.jpg',
     isFruit: false,
     season: ['spring', 'summer', 'autumn'],
     months: [5, 6, 7, 8, 9, 10],
@@ -253,7 +253,7 @@ export const ingredients = [
     id: 22,
     name: 'Peppers',
     imgUrl:
-      'https://images.unsplash.com/photo-1592005527035-90dd2673ede6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80',
+      'https://i.imgur.com/PUIqF6K.jpg',
     isFruit: false,
     season: ['spring', 'summer'],
     months: [5, 6, 7, 8, 9],
@@ -265,7 +265,7 @@ export const ingredients = [
     id: 23,
     name: 'Potatoes',
     imgUrl:
-      'https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+      'https://i.imgur.com/KBIFztg.jpg',
     isFruit: false,
     season: ['spring', 'summer', 'autumn'],
     months: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
@@ -277,7 +277,7 @@ export const ingredients = [
     id: 24,
     name: 'Squash',
     imgUrl:
-      'https://images.pexels.com/photos/1527010/pexels-photo-1527010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://i.imgur.com/bsxGrrB.jpg',
     isFruit: false,
     season: ['spring'],
     months: [5, 6, 7, 8, 9, 10, 11, 12],
@@ -289,7 +289,7 @@ export const ingredients = [
     id: 25,
     name: 'Asparagus',
     imgUrl:
-      'https://images.unsplash.com/photo-1626132661889-4058c6f9508f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80',
+      'https://i.imgur.com/GhxgAsU.jpg',
     isFruit: false,
     season: ['spring'],
     months: [4, 5],
@@ -301,7 +301,7 @@ export const ingredients = [
     id: 26,
     name: 'Cherries',
     imgUrl:
-      'https://images.unsplash.com/photo-1611096265583-5d745206f2a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80',
+      'https://i.imgur.com/EJUvEX4.jpg',
     isFruit: true,
     season: ['spring', 'summer'],
     months: [6, 7, 8, 9],
@@ -313,7 +313,7 @@ export const ingredients = [
     id: 27,
     name: 'Blackcurrant',
     imgUrl:
-      'https://cdn11.bigcommerce.com/s-croon/images/stencil/1280x1280/products/160/471/Blackcurrent__89649.1455201967.jpg?c=2',
+      'https://i.imgur.com/iIGzRNg.jpg',
     isFruit: true,
     season: ['spring', 'summer'],
     months: [6, 7, 8, 9],
