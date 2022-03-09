@@ -27,7 +27,7 @@ export const ingredients = [
     id: 2,
     name: "Leeks",
     imgUrl:
-      "https://media.healthyfood.com/wp-content/uploads/2017/03/What-to-do-with-leeks.jpg",
+      "https://res.cloudinary.com/soc/image/upload/q_23/v1646842210/heather-gill-NyI6X3oj7mg-unsplash_ivfjpy.jpg",
     isFruit: false,
     season: ["autumn", "winter"],
     months: [0, 1, 2, 7, 8, 9, 10, 11],
@@ -39,7 +39,7 @@ export const ingredients = [
     id: 3,
     name: "Pumpkin",
     imgUrl:
-      "https://images.freeimages.com/images/small-previews/234/mini-pumpkins-1385371.jpg",
+      "https://res.cloudinary.com/soc/image/upload/q_29/v1646842835/matt-eberle-jErv0qbDVw0-unsplash_bmu0cl.jpg",
     isFruit: false,
     season: ["autumn", "winter"],
     months: [7, 9, 9, 10, 11],
@@ -51,7 +51,7 @@ export const ingredients = [
     id: 4,
     name: "Apple",
     imgUrl:
-      "https://images.freeimages.com/images/small-previews/26a/apples-1325879.jpg",
+      "https://res.cloudinary.com/soc/image/upload/q_25/v1646842893/priscilla-du-preez-CoqJGsFVJtM-unsplash_v93ti2.jpg",
     isFruit: true,
     season: ["autumn", "winter"],
     months: [0, 1, 9, 10, 11],
@@ -63,7 +63,7 @@ export const ingredients = [
     id: 5,
     name: "Strawberries",
     imgUrl:
-      "https://images.freeimages.com/images/small-previews/c22/strawberry-1324897.jpg",
+      "https://res.cloudinary.com/soc/image/upload/q_26/v1646842474/tetiana-bykovets-grjHFqaCLCg-unsplash_ry7wzu.jpg",
     isFruit: true,
     season: ["spring", "summer"],
     months: [4, 5, 6, 7, 8],
@@ -75,7 +75,7 @@ export const ingredients = [
     id: 6,
     name: "Raspberries",
     imgUrl:
-      "https://images.unsplash.com/photo-1498668629810-d79dcafa7617?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+      "https://res.cloudinary.com/soc/image/upload/q_10/v1646842528/jonathan-mast-ntjpaf3o-Bw-unsplash_h62ji0.jpg",
     isFruit: true,
     season: ["spring", "summer"],
     months: [5, 6, 7, 8],
@@ -86,7 +86,8 @@ export const ingredients = [
   {
     id: 7,
     name: "Cabbages",
-    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Chou_1.jpg",
+    imgUrl:
+      "https://res.cloudinary.com/soc/image/upload/q_15/v1646842779/a-milne-ipCEymapISc-unsplash_vxwzcw.jpg",
     isFruit: false,
     season: ["winter"],
     months: [11, 0, 1, 2],
@@ -98,7 +99,7 @@ export const ingredients = [
     id: 8,
     name: "Brussels sprout",
     imgUrl:
-      "https://res.cloudinary.com/soc/image/upload/q_10/v1646840715/Chou_de_bruxelles_coupe_g0guoj.webp",
+      "https://res.cloudinary.com/soc/image/upload/q_10/v1646842360/sebastian-coman-photography-RCyXyaim87Y-unsplash_yfiswt.jpg",
     isFruit: false,
     season: ["winter"],
     months: [11, 0, 1, 2],
@@ -134,7 +135,7 @@ export const ingredients = [
     id: 11,
     name: "Kale",
     imgUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/2/20/Boerenkool.jpg",
+      "https://res.cloudinary.com/soc/image/upload/q_26/v1646842957/ashleigh-shea-kFZ2nivVBYI-unsplash_mqlyam.jpg",
     isFruit: false,
     season: ["winter"],
     months: [9, 10, 11, 0, 1],
@@ -158,7 +159,7 @@ export const ingredients = [
     id: 13,
     name: "Broccoli",
     imgUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/0/03/Broccoli_and_cross_section_edit.jpg",
+      "https://res.cloudinary.com/soc/image/upload/q_21/v1646843523/hans-ripa-4cEmT3AsoVc-unsplash_whvn5n.jpg",
     isFruit: false,
     season: ["spring", "autumn"],
     months: [3, 4, 5, 8, 9, 10],
@@ -182,7 +183,7 @@ export const ingredients = [
     id: 15,
     name: "Courgette",
     imgUrl:
-      "https://www.deliciousmagazine.co.uk/wp-content/uploads/2018/08/772374-1-eng-GB_how-to-grow-courgettes-768x712.jpg",
+      "https://res.cloudinary.com/soc/image/upload/q_22/v1646843165/helena-munoz-u1znlrXjowM-unsplash_lwfknk.jpg",
     isFruit: false,
     season: ["summer", "autumn"],
     months: [5, 6, 7, 8],
@@ -206,7 +207,7 @@ export const ingredients = [
     id: 17,
     name: "Watermelon",
     imgUrl:
-      "https://images.unsplash.com/photo-1563114773-84221bd62daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "https://res.cloudinary.com/soc/image/upload/q_16/v1646842649/art-rachen-izi5AnlbRIA-unsplash_togef7.jpg",
     isFruit: true,
     season: ["summer"],
     months: [4, 5, 6],
@@ -242,7 +243,7 @@ export const ingredients = [
     id: 21,
     name: "Beetroot",
     imgUrl:
-      "https://images.unsplash.com/photo-1533231040102-5ec7a63e6d0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "https://res.cloudinary.com/soc/image/upload/q_10/v1646842284/monika-grabkowska-H5FaXUf3d9c-unsplash_vzveew.jpg",
     isFruit: false,
     season: ["spring", "summer", "autumn"],
     months: [5, 6, 7, 8, 9, 10],
@@ -254,7 +255,7 @@ export const ingredients = [
     id: 22,
     name: "Peppers",
     imgUrl:
-      "https://images.unsplash.com/photo-1592005527035-90dd2673ede6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80",
+      "https://res.cloudinary.com/soc/image/upload/q_10/v1646842576/vino-li-v7H-fV9Ydkk-unsplash_ewmjql.jpg",
     isFruit: false,
     season: ["spring", "summer"],
     months: [5, 6, 7, 8, 9],
@@ -266,7 +267,7 @@ export const ingredients = [
     id: 23,
     name: "Potatoes",
     imgUrl:
-      "https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "https://res.cloudinary.com/soc/image/upload/q_23/v1646842717/eric-prouzet-52DMHPBAvXY-unsplash_uqxsqx.jpg",
     isFruit: false,
     season: ["spring", "summer", "autumn"],
     months: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
@@ -278,7 +279,7 @@ export const ingredients = [
     id: 24,
     name: "Squash",
     imgUrl:
-      "https://images.pexels.com/photos/1527010/pexels-photo-1527010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://res.cloudinary.com/soc/image/upload/q_20/v1646843207/kim-daniels-lnPCB2PkB8M-unsplash_ntvyl1.jpg",
     isFruit: false,
     season: ["spring"],
     months: [5, 6, 7, 8, 9, 10, 11, 12],
@@ -290,7 +291,7 @@ export const ingredients = [
     id: 25,
     name: "Asparagus",
     imgUrl:
-      "https://images.unsplash.com/photo-1626132661889-4058c6f9508f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+      "https://res.cloudinary.com/soc/image/upload/q_10/v1646842417/christine-siracusa-1xGKxpCoM5s-unsplash_gtbzdp.jpg",
     isFruit: false,
     season: ["spring"],
     months: [4, 5],
@@ -302,7 +303,7 @@ export const ingredients = [
     id: 26,
     name: "Cherries",
     imgUrl:
-      "https://images.unsplash.com/photo-1611096265583-5d745206f2a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
+      "https://res.cloudinary.com/soc/image/upload/q_33/v1646843014/neha-deshmukh-GoKXJaQoLQs-unsplash_ohwzfn.jpg",
     isFruit: true,
     season: ["spring", "summer"],
     months: [6, 7, 8, 9],
@@ -314,7 +315,7 @@ export const ingredients = [
     id: 27,
     name: "Blackcurrant",
     imgUrl:
-      "https://cdn11.bigcommerce.com/s-croon/images/stencil/1280x1280/products/160/471/Blackcurrent__89649.1455201967.jpg?c=2",
+      "https://res.cloudinary.com/soc/image/upload/q_13/v1646843409/monika-grabkowska-ZcbvLO536zU-unsplash_ydwnvq.jpg",
     isFruit: true,
     season: ["spring", "summer"],
     months: [6, 7, 8, 9],
