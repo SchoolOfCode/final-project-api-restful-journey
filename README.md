@@ -1,6 +1,7 @@
 <img src='https://github.com/SchoolOfCode/final-project-repo-restful-journey/blob/main/Untitled%20design.png' alt="banner"></img>
 
 # Nourish. App - Back-End
+[Link to Nourish App](https://seasonal-food.netlify.app/)
 
 **Welcome to Nourish!** 
 Our Final group project as a team of five. 
